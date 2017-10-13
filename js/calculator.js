@@ -7,9 +7,32 @@ export class Calculator {
     return (years * 31536000)
   }
 
+  convertYears(seconds) {
+    return (seconds/31536000)
+  }
+
   subtractDates(date) {
     let start = moment(date, "DD.MM.YYYY")
     let end = moment()
-    return start.diff(end, 'seconds')
+    return end.diff(start, 'seconds')
   }
+
+  mercuryAge(seconds) {
+    return seconds * .24
+  }
+
+  venusAge(seconds) {
+    return seconds * .62
+  }
+
+  marsAge(seconds) {
+    return seconds * 1.88
+  }
+
+  jupiterAge(seconds) {
+    return seconds * 11.86
+  }
+
+
+
 }
