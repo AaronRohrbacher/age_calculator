@@ -41,5 +41,8 @@
     "url": "https://github.com/SaraSpink/rpg/issues"
   },
   "homepage": "https://github.com/SaraSpink/rpg#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "moment": "^2.19.1"
+  }
 }

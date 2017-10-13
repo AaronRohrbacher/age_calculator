@@ -6,6 +6,7 @@ module.exports = function(config) {
     files: [
       'js/*.js',
       'spec/*-spec.js',
+      'bower_components/moment/moment.js',
     ],
     exclude: [
     ],
