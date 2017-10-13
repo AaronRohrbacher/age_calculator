@@ -1,4 +1,5 @@
 export class Calculator {
+
   constructor(name) {
     this.name = name;
   }
@@ -33,6 +34,26 @@ export class Calculator {
     return seconds * 11.86
   }
 
+  lifeExpectancy(fitness, smoke, drink) {
+    let totalYears = 79
 
+    if (fitness <= 3) {
+      totalYears -= 2
+    }
+    if (smoke === true) {
+      totalYears -= 3
+    }
+    if (drink >= 8) {
+      totalYears -= 4
+    }
+    return totalYears;
+  }
 
+  compareLifeExpectancy(age, lifeExpectancy) {
+    if (age > lifeExpectancy) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 }

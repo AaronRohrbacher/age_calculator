@@ -50,4 +50,12 @@ describe('Calculator', function() {
 
   })
 
+  it("Determines a person's life expectancy based on health factors", () => {
+    expect(calculator.lifeExpectancy(5, false, 5)).toEqual(79)
+  })
+
+  it("Determines wheather a person has surpassed his life expectancy", () => {
+    let lifeExpectancy = calculator.lifeExpectancy(5, false, 5);
+    expect(calculator.compareLifeExpectancy(31, lifeExpectancy)).toEqual(false)
+  })
 });
