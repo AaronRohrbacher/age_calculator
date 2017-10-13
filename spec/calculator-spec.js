@@ -1,4 +1,4 @@
-import { Calculator } from './../js/inventory.js';
+import { Calculator } from './../js/calculator.js';
 
 describe('Calculator', function() {
   let calculator;
@@ -9,3 +9,4 @@ describe('Calculator', function() {
   it('Converts years into seconds', () => {
     expect(calculator.convertSeconds(31)).toEqual(977616000)
   });
+});
