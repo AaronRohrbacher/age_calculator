@@ -13,7 +13,7 @@ export class Calculator {
   }
 
   subtractDates(date) {
-    let start = moment(date, "DD.MM.YYYY")
+    let start = moment(date, "YYYY-MM-DD")
     let end = moment()
     return end.diff(start, 'seconds')
   }
