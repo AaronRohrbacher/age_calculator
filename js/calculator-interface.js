@@ -21,7 +21,7 @@ $(document).ready(function() {
     let jupiterExp = calculator.convertYears(calculator.jupiterAge(calculator.convertSeconds(calculator.lifeExpectancy(fitness, smoke, drink))))
     let marsExp = calculator.convertYears(calculator.marsAge(calculator.convertSeconds(calculator.lifeExpectancy(fitness, smoke, drink))))
 
-
+    $('#result').show();
 
     $('#earth').text(calculator.convertYears(age));
     $('#mercury').text(calculator.convertYears(calculator.mercuryAge(age)));
@@ -32,6 +32,6 @@ $(document).ready(function() {
     $('#lifeMercury').text(mercuryExp);
     $('#lifeVenus').text(venusExp);
     $('#lifeJupiter').text(jupiterExp);
-    $('#lifeMars').text(marsExp)
+    $('#lifeMars').text(marsExp);
   });
 });
