@@ -6,21 +6,32 @@ $(document).ready(function() {
     event.preventDefault();
     let date = $('#date').val();
     let fitness = $('#fit').val();
-    if ($('#smoke').val() === "true") {
-      let smoke = true;
+    let smoke;
+
+    if ($('#smoke').val() === "false") {
+      smoke = false;
     } else {
-      let smoke = false;
+      smoke = true;
     }
     let drink = $('#drink').val();
     let age = calculator.subtractDates(date);
+
+    let mercuryExp = calculator.convertYears(calculator.mercuryAge(calculator.convertSeconds(calculator.lifeExpectancy(fitness, smoke, drink))))
+    let venusExp = calculator.convertYears(calculator.venusAge(calculator.convertSeconds(calculator.lifeExpectancy(fitness, smoke, drink))))
+    let jupiterExp = calculator.convertYears(calculator.jupiterAge(calculator.convertSeconds(calculator.lifeExpectancy(fitness, smoke, drink))))
+    let marsExp = calculator.convertYears(calculator.marsAge(calculator.convertSeconds(calculator.lifeExpectancy(fitness, smoke, drink))))
+
+
 
     $('#earth').text(calculator.convertYears(age));
     $('#mercury').text(calculator.convertYears(calculator.mercuryAge(age)));
     $('#venus').text(calculator.convertYears(calculator.venusAge(age)));
     $('#mars').text(calculator.convertYears(calculator.marsAge(age)));
 
-    $('#lifeEarth').text(calculator.lifeExpectancy(fitness, smoke, drink))
-
-
-  })
-})
+    $('#lifeEarth').text(calculator.lifeExpectancy(fitness, smoke, drink));
+    $('#lifeMercury').text(mercuryExp);
+    $('#lifeVenus').text(venusExp);
+    $('#lifeJupiter').text(jupiterExp);
+    $('#lifeMars').text(marsExp)
+  });
+});

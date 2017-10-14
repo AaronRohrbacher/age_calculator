@@ -5,46 +5,46 @@ export class Calculator {
   }
 
   convertSeconds(years) {
-    return (years * 31536000)
+    return (years * 31536000);
   }
 
   convertYears(seconds) {
-    return (seconds/31536000)
+    return (seconds/31536000);
   }
 
   subtractDates(date) {
-    let start = moment(date, "YYYY-MM-DD")
-    let end = moment()
-    return end.diff(start, 'seconds')
+    let start = moment(date, "YYYY-MM-DD");
+    let end = moment();
+    return end.diff(start, 'seconds');
   }
 
   mercuryAge(seconds) {
-    return seconds * .24
+    return seconds * 0.24;
   }
 
   venusAge(seconds) {
-    return seconds * .62
+    return seconds * 0.62;
   }
 
   marsAge(seconds) {
-    return seconds * 1.88
+    return seconds * 1.88;
   }
 
   jupiterAge(seconds) {
-    return seconds * 11.86
+    return seconds * 11.86;
   }
 
   lifeExpectancy(fitness, smoke, drink) {
-    let totalYears = 79
+    let totalYears = 79;
 
-    if (fitness <= 3) {
-      totalYears -= 2
+    if (fitness < 3) {
+      totalYears -= 2;
     }
     if (smoke === true) {
-      totalYears -= 3
+      totalYears -= 3;
     }
     if (drink >= 8) {
-      totalYears -= 4
+      totalYears -= 4;
     }
     return totalYears;
   }
