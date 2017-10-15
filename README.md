@@ -7,7 +7,7 @@
 ## Setup/Installation Requirements
 
 * _Clone this repository_
-* _If you haven't already, install node. Instructions can be found here: url(https://nodejs.org/en/download/)_
+* _If you haven't already, install node. Instructions can be found here: (https://nodejs.org/en/download/)_
 * _Also install Gulp and Bower globally using npm._
 * _Testing is done using Jasmine and Karma. Feel free to test with your favorite testing environment!_
 * _Run `npm install` from the root directory of this repository. Note: this should install Moment as well. If it doesn't intall it manually._
