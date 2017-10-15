@@ -29,6 +29,6 @@
 _Aaron Rohrbacher: aaronrohrbacher.github.io/portfolio/_
 
 ## Technologies Used
-_Written in JavaScript and JQuery, managed with NPM, Gulp, and Bower. Depends on Moment, and is tested with Karma, built on Jasmine. _
+_Written in JavaScript and JQuery, managed with NPM, Gulp, and Bower. Depends on Moment, and is tested with Karma, built on Jasmine._
 
 Copyright (c) 2017 **_Aaron Rohrbacher_**
